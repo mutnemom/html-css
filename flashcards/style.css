@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    color: #4f4f4f;
+}
+.quiz-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flashcards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 70vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+}
+
+.filler {
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.filler:hover {
+    transform: rotateY(180deg);
+
+}
+.filler .front,
+.filler .back {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    animation: gradient 15s ease infinite;
+}
+
+.filler .front {
+    /* /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-size: 400% 400%;
+background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+color: white;
+}
+
+.filler .back {
+    /* background: linear-gradient(-45deg, #eeca52, #3c53e7, #73d523, #23d5ab);
+    background-size: 400% 400%; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid orange;
+}
+
+.front,
+.back {
+    font-size: 20px;
+    font-weight: bold;
+   
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
