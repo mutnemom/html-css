@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./zbiorCstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="pytanie">
+        <h1>Pytanie 31</h1>
+        <p>Testujesz aplikację mobilną, która pozwala użytkownikom znaleźć pobliską restaurację
+w oparciu o rodzaj jedzenia, które chcą zjeść. Rozważ poniższą listę przypadków testowych,
+priorytety (mniejsza liczba oznacza wyższy priorytet) i zależności logiczne w następującej
+tabeli:</p>
+       <table>
+           <tbody>
+               <tr>
+                   <td><strong>Numer przypadku testowego</strong></td>
+                   <td><strong>Pokrywany warunek testu</strong></td>
+                   <td><strong>Priorytet</strong></td>
+                   <td><strong>Zależność logiczna</strong></td>
+               </tr>
+               <tr>
+                   <td>01.001</td>
+                   <td>Wybierz rodzaj żywności</td>
+                   <td>3</td>
+                   <td>brak</td>
+               </tr>
+               <tr>
+                   <td>01.002</td>
+                   <td>Wybierz restaurację</td>
+                   <td>2</td>
+                   <td>01.001</td>
+               </tr>
+               <tr>
+                   <td>01.003</td>
+                   <td>Uzyskaj wskazówki</td>
+                   <td>1</td>
+                   <td>01.002</td>
+               </tr>
+               <tr>
+                   <td>01.004</td>
+                   <td>Zadzwoń do restauracji</td>
+                   <td>1</td>
+                   <td>01.002</td>
+               </tr>
+               <tr>
+                   <td>01.005</td>
+                   <td>Dokonaj rezerwacji</td>
+                   <td>3</td>
+                   <td>01.002</td>
+               </tr>
+           </tbody>
+       </table>
+        <h2>Który z poniższych jest możliwym harmonogramem wykonywania testów, uwzględniającym
+zarówno priorytety, jak i zależności?</h2>
+        <button type="button" onclick="alert('Zła odpowiedź!')">A. 01.001, 01.002, 01.003, 01.005, 01.004
+        </button><br>
+        <button type="button" onclick="alert('Dobra odpowiedź!')">B. 01.001, 01.002, 01.004, 01.003, 01.005</button><br>
+        <button type="button" onclick="alert('Zła odpowiedź!')">C. 01.003, 01.004, 01.002, 01.001, 01.002</button><br>
+        <button type="button" onclick="alert('Zła odpowiedź!')">D. 01.001, 01.002, 01.004, 01.003, 01.004.</button>
+        <button id="link"><a href=".\pytanie32.html">Następne pytanie</a></button>
+        <button id="menu"><a href="..\index.html">Strona główna</a></button>
+        
+    </div>
+
+
+</body>
+
+</html>
