@@ -1,0 +1,125 @@
+body {
+  background-color: #16003B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body > p {
+  color: #7F8487;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body form section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+}
+body form section div:nth-child(1) {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body form section div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+body form section div p {
+  color: hsl(332deg, 92%, 60%);
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+body form > div {
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+  margin-top: 50px;
+}
+body form > div > input {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: hsl(332deg, 92%, 60%);
+  border: none;
+  border-radius: 5px;
+  color: #16003B;
+  letter-spacing: 2px;
+}
+body article {
+  color: #7F8487;
+  width: 40vw;
+  border: 2px solid hsl(332deg, 92%, 60%);
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: rgba(247, 59, 147, 0.089);
+}
+body article table {
+  width: 100%;
+  padding: 10px;
+}
+body article table td:nth-child(5), body article table td:nth-child(6) {
+  width: 100px;
+}
+body article table a {
+  color: #16003B;
+  background-color: hsl(332deg, 92%, 60%);
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  body form section {
+    width: 90vw;
+  }
+  body form section div:nth-child(1) {
+    width: 40%;
+    font-size: 14px;
+  }
+  body article {
+    width: 90vw;
+  }
+  body article table td {
+    font-size: 10px;
+  }
+  body article table td:nth-last-child(1) {
+    width: 10%;
+  }
+  body article table td:nth-child(2) {
+    width: 25%;
+  }
+  body article table td:nth-child(3) {
+    width: 25%;
+  }
+  body article table td:nth-child(4) {
+    width: 10%;
+  }
+  body article table td:nth-child(5), body article table td:nth-child(6) {
+    width: 10%;
+  }
+  body article table td:nth-child(5) a, body article table td:nth-child(6) a {
+    padding: 5px 10px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  body form section {
+    width: 90vw;
+  }
+  body article {
+    width: 90vw;
+  }
+  body article table td:nth-child(5), body article table td:nth-child(6) {
+    width: 80px;
+  }
+}/*# sourceMappingURL=style-dziennik.css.map */

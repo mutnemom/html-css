@@ -1,0 +1,56 @@
+$color1: hsl(332, 92%, 60%);
+$color2: #16003B;
+$color3: #413F42;
+$color4: #7F8487;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $color2;
+    font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+
+  form {
+    background-color: $color4;
+    padding: 20px 50px;
+    border-radius: 20px;
+    color: #16003B;
+    
+    section {
+      display: flex;
+      flex-direction: row;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &:nth-child(2) {
+          margin-right: 20px;
+        }
+      }
+    }
+      >div {
+        text-align: center;
+        margin-top: 20px;
+        >input {
+          padding: 10px 20px;
+          background-color: $color1;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+    }
+  
+}
+
+@media (max-width: 600px) {
+  body {
+    form {
+      padding: 20px 30px;
+    }
+  }
+}

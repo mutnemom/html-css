@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #16003B;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+}
+body form {
+  background-color: #7F8487;
+  padding: 20px 50px;
+  border-radius: 20px;
+  color: #16003B;
+}
+body form section {
+  display: flex;
+  flex-direction: row;
+}
+body form section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body form section div:nth-child(2) {
+  margin-right: 20px;
+}
+body form > div {
+  text-align: center;
+  margin-top: 20px;
+}
+body form > div > input {
+  padding: 10px 20px;
+  background-color: hsl(332deg, 92%, 60%);
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  body form {
+    padding: 20px 30px;
+  }
+}/*# sourceMappingURL=edytujAktywnosc.css.map */
