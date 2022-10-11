@@ -73,7 +73,19 @@ body {
     table {
       width: 100%;
       padding: 10px;
+      tbody {
+        tr {
       td {
+        text-align: center;
+        &:nth-child(1) {
+          width: 5%;
+        }
+        &:nth-child(2) {
+          width: 30%;
+        }
+        &:nth-child(3) {
+          width: 20%;
+        }
         &:nth-child(5),
         &:nth-child(6) {
           width: 100px;
@@ -88,6 +100,8 @@ body {
       letter-spacing: 2px;
         
       }
+    }
+    }
     }
   }
 }

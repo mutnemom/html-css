@@ -67,10 +67,22 @@ body article table {
   width: 100%;
   padding: 10px;
 }
-body article table td:nth-child(5), body article table td:nth-child(6) {
+body article table tbody tr td {
+  text-align: center;
+}
+body article table tbody tr td:nth-child(1) {
+  width: 5%;
+}
+body article table tbody tr td:nth-child(2) {
+  width: 30%;
+}
+body article table tbody tr td:nth-child(3) {
+  width: 20%;
+}
+body article table tbody tr td:nth-child(5), body article table tbody tr td:nth-child(6) {
   width: 100px;
 }
-body article table a {
+body article table tbody tr a {
   color: #16003B;
   background-color: hsl(332deg, 92%, 60%);
   border-radius: 5px;
